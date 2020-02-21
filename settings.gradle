@@ -1,0 +1,7 @@
+rootProject.name = 'ssm_gradle_springboot_with_java_annotation'
+include 'ssm-common'
+include 'ssm-pojo'
+include 'ssm-dao'
+include 'ssm-web'
+include 'ssm-service'
+

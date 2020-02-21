@@ -1,0 +1,7 @@
+dependencies {
+    api project(':ssm-pojo')
+    implementation "org.mybatis.spring.boot:mybatis-spring-boot-starter:${MYBATIS_BOOTER_VERSION}"
+    implementation "com.alibaba:druid-spring-boot-starter:${DRUID_VERSION}"
+    implementation 'mysql:mysql-connector-java'
+    implementation "com.github.pagehelper:pagehelper:${PAGEHELPER_VERSION}"
+}

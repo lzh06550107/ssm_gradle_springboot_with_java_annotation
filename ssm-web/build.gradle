@@ -1,0 +1,27 @@
+plugins {
+    id 'org.springframework.boot' version '2.2.4.RELEASE'
+}
+
+configurations {
+    developmentOnly
+    runtimeClasspath {
+        extendsFrom developmentOnly
+    }
+}
+
+dependencies {
+    implementation 'cn.liaozhonghao.www:ssm-service:1.0-SNAPSHOT'
+
+    implementation 'org.springframework.boot:spring-boot-starter-thymeleaf'
+    implementation 'org.springframework.boot:spring-boot-starter-web'
+    implementation 'org.mybatis.spring.boot:mybatis-spring-boot-starter:2.1.1'
+    developmentOnly 'org.springframework.boot:spring-boot-devtools'
+    testImplementation('org.springframework.boot:spring-boot-starter-test') {
+        exclude group: 'org.junit.vintage', module: 'junit-vintage-engine'
+    }
+    developmentOnly "com.h2database:h2:${H2_VERSION}"
+}
+
+test {
+    useJUnitPlatform()
+}

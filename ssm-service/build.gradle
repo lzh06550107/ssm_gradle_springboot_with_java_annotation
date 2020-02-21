@@ -1,0 +1,5 @@
+dependencies {
+    api project(':ssm-dao')
+
+    implementation 'org.springframework:spring-context'
+}
