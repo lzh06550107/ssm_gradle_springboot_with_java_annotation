@@ -31,8 +31,8 @@ subprojects {
     }
 
     dependencies {
-        implementation "com.google.code.gson:gson:${GSON_VERSION}"
-        implementation "org.apache.commons:commons-lang3:${COMMONS_LANG3_VERSION}"
-        testImplementation "junit:junit:${JUNIT_VERSION}"
+        implementation "com.google.code.gson:gson"
+        implementation "org.apache.commons:commons-lang3"
+        testImplementation "junit:junit"
     }
 }
